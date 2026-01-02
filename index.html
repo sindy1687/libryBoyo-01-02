@@ -220,20 +220,24 @@
         <!-- 書籍列表 -->
         <div class="books-section">
             <div class="books-header">
-                <h2>館藏清單</h2>
+                <h2><i class="fas fa-book"></i> 館藏列表</h2>
                 <div class="view-controls">
-                    <button id="grid-view" class="view-btn active">
+                    <button id="grid-view" class="view-btn active" title="網格視圖">
                         <i class="fas fa-th"></i>
                     </button>
-                    <button id="list-view" class="view-btn">
+                    <button id="list-view" class="view-btn" title="列表視圖">
                         <i class="fas fa-list"></i>
                     </button>
                 </div>
             </div>
             <div id="books-container" class="books-grid">
-                <!-- 書籍卡片將在這裡動態生成 -->
+                <!-- 書籍將在這裡動態生成 -->
             </div>
         </div>
+
+        <button id="borrowed-fab" class="borrowed-fab" type="button" aria-label="借閱紀錄">
+            <i class="fas fa-list"></i>
+        </button>
 
         <!-- 借閱記錄 -->
         <div class="borrowed-section">
