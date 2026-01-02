@@ -172,6 +172,15 @@ class LibrarySystem {
         // 匯出借閱清單
         document.getElementById('export-borrowed-btn').addEventListener('click', () => this.exportBorrowedToExcel());
 
+        const borrowedFab = document.getElementById('borrowed-fab');
+        if (borrowedFab) {
+            borrowedFab.addEventListener('click', () => {
+                const panel = document.querySelector('.borrowed-section');
+                if (!panel) return;
+                panel.classList.toggle('open');
+            });
+        }
+
         // Google Sheets 同步
         const googlePullBtn = document.getElementById('google-pull-btn');
         const googlePushBtn = document.getElementById('google-push-btn');
